@@ -489,6 +489,92 @@
     .youtube1 embed {
       position:absolute; top:0; left:20%; width:60%; height:60%;
     }
+    
+        /* Intro */
+        /* Nav container */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
+    }
+  
+        /* Menu */
+    .navbar_menu {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .navbar_menu > a {
+      /* Fill in an entire line so that user can click on any space */
+      display: block;
+    }
+  
+        /* Icons */
+    .navbar_icons {
+      display: none;
+      justify-content: center;
+      width: 100%;
+    }
+  
+        /* Toggle button */
+    .navbar_toggleBtn {
+      display: block;
+    }
+  
+        /* When toggle button is clicked - active state */
+    .navbar_menu.active,
+    .navbar_icons.active {
+      display: flex;
+    }
+    .about_epi {
+        width:100%;
+        height:1500px;
+        margin-top:-132px;
+        background:#f1f2f3;
+    }
+    .about_epi >.icons {
+        flex-direction:column;
+        align-items:center;
+    }
+    .partners {
+        width:100%; height:auto;
+    }
+    .icons {
+        width:100%; height:auto;
+    }
+    /* DOWNLOAD 버튼 */
+    .btn {
+      text-decoration:none;
+      font-size:18px;
+      background-color:#005666;
+      color:white;
+      padding:10px 20px 10px 20px;
+      display:inline-block;
+      border-radius:10px;
+      border-bottom:5px solid #024d5a81;
+      text-shadow:0px -2px black;
+      margin-bottom:20px;
+      margin-top:20px;
+    }
+      /* 유튜브 동영상 아래로 내리기 */
+    .insight {
+      width: 100%;
+      height:800px;
+      display:block;
+      margin-top:20px;
+    }
+    .youtube1 {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
+    .youtube1 iframe,
+    .youtube1 object,
+    .youtube1 embed {
+      position:absolute; top:0; left:10%; width:80%; height:80%;
+    }
+    /* 이미지 슬라이드 아래 버튼 관련 */
+    .slider figcaption {padding:10px;}
+    .slider figcaption em {font-size:18px;}
+    .slider figcaption span {font-size:10px;}
   }
 
 
