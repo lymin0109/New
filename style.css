@@ -429,7 +429,7 @@
       display:block;
       margin-top:30px; margin-bottom:20px;
     }
-    .youtube1 {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
+    .youtube1 {position:relative; padding-bottom:56.25%; padding-top:50px; height:0; overflow:hidden;}
     .youtube1 iframe,
     .youtube1 object,
     .youtube1 embed {
