@@ -65,7 +65,6 @@
 
   body {
     margin: 0;
-    font-family: 'Source Sans Pro';
 }
   
   a {
@@ -223,9 +222,13 @@
       font-size:12px;
       line-height:30px;
       margin:25px auto;
+      transition: all 0.1s;
   }
   .more > a {
     color:#fff;
+  }
+  .more:active {
+    border-radius:50%;
   }
 
   /* about_epi end */
@@ -343,15 +346,15 @@
     position:absolute; left:11px; top:8px;
   }
 
-   /* 2번째 */
+   /* ETF 소개2_탭 버전 */
    .tabs {
      width:100%; height:600px auto; margin-bottom:20px;
    }
    input[type="radio"] {display:none;}
-   input[type="radio"] + label {display:inline-block;padding:20px;background:#ccc;color:#999;font-size:14px;cursor:pointer;width:19.8%;}
-   input[type="radio"]:checked + label {background:#005666;color:white;}
+   input[type="radio"] + label {display:inline-block;padding:20px;background:#ccc;color:#999;font-size:14px;cursor:pointer;width:15%;}
+   input[type="radio"]:checked + label {background:#00887A;color:white;font-size:20px;font-weight: bold;border-color:#005666;border-width:5px;}
 
-   .conbox {width:80%;height:600px;background:#005666;margin:0 auto;display:none}
+   .conbox {width:80%;height:600px;background:#00887A;margin:0 auto;display:none}
    input[id="tab01"]:checked ~.con1 {display:block;}
    input[id="tab02"]:checked ~.con2 {display:block;}
    input[id="tab03"]:checked ~.con3 {display:block;}
@@ -388,14 +391,6 @@
     height:30px;
   }
 
- @media min-width: 1280px {
-    .more {
-      transition: all 0.1s;
-    }
-    .more:active {
-        border-radius:50%;
-    }
-}
   @media screen and (max-width: 1280px) {
     /* Intro */
         /* Nav container */
@@ -435,12 +430,12 @@
         .navbar_icons.active {
           display: flex;
         }
-    .partners {
-        width:100%; height:auto;
-    }
-    .icons {
-        width:100%; height:auto;
-    }
+        .partners {
+          width:95%;
+      }
+        .partners > li {
+          height:120px;
+      }
      /* 유튜브 동영상 아래로 내리기 */
      .insight {
       width: 100%;
@@ -524,8 +519,11 @@
         align-items:center;
     }
     .partners {
-        width:100%; height:auto;
-    }
+      width:95%;
+  }
+    .partners > li {
+      height:100px;
+  }
     .icons {
         width:100%; height:auto;
     }
@@ -578,20 +576,3 @@
       height:1.5%;
     }
 }
-
-/* 모바일 오류 해결 
-@media screen and (max-device-width: 1024px) {
-  .btn {
-    transition:none;
-  }
-  .btn:active {
-    transform:none;
-  }
-  .more:active {
-    transform:none;
-  }
-  .icons_link > img {
-    width:2%;
-    height:2%;
-  }
-} */
