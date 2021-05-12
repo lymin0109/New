@@ -352,7 +352,7 @@
      width:100%; height:600px auto; margin-bottom:20px;
    }
    input[type="radio"] {display:none;}
-   input[type="radio"] + label {display:inline-block;padding:20px;background:#ccc;color:#999;font-size:14px;cursor:pointer;width:19.8%;text-align:left;}
+   input[type="radio"] + label {display:inline-block;padding:20px;background:#ccc;color:#999;font-size:14px;cursor:pointer;width:19.8%;}
    input[type="radio"]:checked + label {background:#005666;color:white;}
 
    .conbox {width:80%;height:600px;background:#005666;margin:0 auto;display:none}
