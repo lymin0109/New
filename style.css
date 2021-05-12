@@ -223,13 +223,9 @@
       font-size:12px;
       line-height:30px;
       margin:25px auto;
-      transition: all 0.1s;
   }
   .more > a {
     color:#fff;
-  }
-  .more:active {
-    border-radius:50%;
   }
 
   /* about_epi end */
