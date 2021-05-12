@@ -459,7 +459,6 @@
     }
     .more {
       transition:none;
-      transform:none;
     }
     .more:active {
       transform:none;
@@ -566,7 +565,6 @@
     }
     .more {
       transition:none;
-      transform:none;
     }
     .more:active {
       transform:none;
