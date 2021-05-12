@@ -392,6 +392,14 @@
     height:30px;
   }
 
+ @media min-width: 1280px {
+    .more {
+      transition: all 0.1s;
+    }
+    .more:active {
+        border-radius:50%;
+    }
+}
   @media screen and (max-width: 1280px) {
     /* Intro */
         /* Nav container */
