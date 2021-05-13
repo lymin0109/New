@@ -430,12 +430,25 @@
         .navbar_icons.active {
           display: flex;
         }
-        .partners {
-          width:95%;
-      }
-        .partners > li {
-          height:120px;
-      }
+        .about_epi {
+        width:100%;
+        height:1500px;
+        margin-top:-132px;
+        background:#f1f2f3;
+    }
+    .about_epi >.icons {
+        flex-direction:column;
+        align-items:center;
+    }
+    .partners {
+      width:95%;
+  }
+    .partners > li {
+      height:100px;
+  }
+    .icons {
+        width:100%; height:auto;
+    }
      /* 유튜브 동영상 아래로 내리기 */
      .insight {
       width: 100%;
