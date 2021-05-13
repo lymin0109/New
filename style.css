@@ -1,0 +1,601 @@
+/* Global */
+:root {
+    --text-color: 005666;
+    --background-color: 005666;
+    --accent-color: #00887A;
+}
+  
+  * {
+    /* Tells the browser to account for any border and 
+    padding in the values you specify for an element's 
+    width and height. */
+    box-sizing: border-box;
+}
+  
+  * {
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding: 0px;
+    color: #000;
+}
+
+/* 글씨 관련 */
+  h1 {
+    font-size: 48px;
+    font-weight: 100;
+}
+  h6 {
+    font-size: 36px;
+    font-weight: 100;
+    color:#fff;
+}
+  h4 {
+    font-size: 36px;
+    font-weight: 100;
+    color:#fff;
+}
+  h7 {
+      color:white;
+      font-size:48px;
+      font-weight:bold;
+}
+  .contents1 {
+      font-size:20px;
+      font-weight:lighter;
+      text-align:center;
+      word-break:keep-all;
+}
+  .contents2 {
+    font-size:18px;
+    text-align:center;
+    word-break:keep-all;
+}
+  .contents3 {
+    font-size:24px;
+    font-weight: 100;
+}
+  .contents1_bold {
+    font-size:18px;
+    font-weight: bold;
+}
+/* 글씨 끝*/
+
+  body {
+    margin: 0;
+}
+  
+  a {
+    text-decoration: none;
+    color: #005666;
+}
+
+  /* Header */
+  .navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 12px;
+    background-color:white;
+}
+
+    /* Logo with text */
+  .navbar_logo {
+    font-size:24px;
+    padding:8px 12px;
+    color: #005666;
+}
+  
+  .navbar_logo > i {
+    padding:8px 12px;
+    color: #005666;
+}
+  
+    /* Menu */
+  .navbar_menu {
+    display:flex;
+    padding-left: 0;
+    list-style:none;
+}
+  
+  .navbar_menu > li {
+    padding:8px 12px;
+}
+  
+  .navbar_menu > li:hover {
+    background-color: #00887A;
+    border-radius: 4px;
+}
+
+  .navbar_icons {
+    list-style:none;
+    color: #005666;
+    display:flex;
+    padding-left: 0;
+}
+  
+    /* Icons */
+  .navbar_icons > li {
+    padding:10px 15px;
+}
+  
+    /* Toggle button */
+  .navbar_toggleBtn {
+    display:none;
+    position:absolute;
+    right:32px;
+    font-size:24px;
+    color: #005666;
+}
+  /* Header End */
+  /* Intro_about */
+  .intro_about {
+      display:flex;
+      background-color:#006666;
+      width:100%;
+      height:714px;
+}
+  .intro_text {
+      width:100%;
+      margin:-100px auto -100px auto;
+      margin-top: 100px;
+      text-align:center;
+}
+  .intro_text > h7 {
+      color:#fff;
+}
+/* intro_about end*/
+/* partners */
+  .partners {
+      position:relative;
+      top:-66px;
+      display:flex;
+      width:95%;
+      background:#fff;
+      box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+      margin:auto;
+      height:150px;
+}
+  .partners > li {
+      flex:1;
+      width:19%;
+      height:150px;
+}
+  .partners > li > .partners_detail {
+      text-align:center;
+      width:100%;
+      margin-top:30px; margin-left:10px;
+      height:57px;
+}
+  .partners > li:not(:last-child) > div {
+      border-right:1px solid #e1e1e1;
+}
+  .partners > img {
+    width:100%;
+    height:auto;
+  }
+
+
+/* partners end */
+/* about_epi */
+  .about_epi {
+      width:100%;
+      height:750px;
+      margin-top:-132px;
+      background:#f1f2f3;
+  }
+  .about_epi > h1 {
+      padding-top:116px;
+      text-align:center;
+  }
+    /* icon 관련 */
+  .icons {
+      display:flex;
+      width:1280px;
+      height:302px;
+      margin:auto;
+}
+  .icons > li {
+      flex:1;
+      background:white;
+      margin-top:49px;
+      width:60%;
+      height:302px;
+      text-align:center;
+  }
+  .icons > li > .icon_img {
+      margin-top:18px;
+  }
+  .icons > li:not(:last-child) {
+      margin-right:20px;
+  }
+  .icons > .contents2 {
+      width:280px;
+      margin:auto;
+      letter-spacing:-1px;
+  }
+  .more {
+      width:100px;
+      height:30px;
+      background:#2f7af4;
+      font-size:12px;
+      line-height:30px;
+      margin:25px auto;
+      transition: all 0.1s;
+  }
+  .more > a {
+    color:#fff;
+  }
+  .more:active {
+    border-radius:50%;
+  }
+
+  /* about_epi end */
+  /* Monthly Insight */
+  .insight {
+    width: 100%;
+    height:550px;
+    display:flex;
+    margin-top:30px;
+  }
+  .insight > h1 {
+    padding-top:50px;
+    text-align: center;
+  }
+  .insight > div {
+    margin-bottom:20px; margin-top:30px;
+    flex:1;
+  }
+    /* 다운로드 버튼 */
+  .btn {
+    text-decoration:none;
+    font-size:18px;
+    background-color:#005666;
+    color:white;
+    padding:10px 20px 10px 20px;
+    display:inline-block;
+    border-radius:10px;
+    transition:all 0.1s;
+    border-bottom:5px solid #024d5a81;
+    text-shadow:0px -2px black;
+    margin-bottom:20px;
+    margin-top:20px;
+  }
+  .btn:active {
+    transform: translateY(10px);
+    border-bottom:2px solid #024d5a81;
+  }
+    /* 유튜브 영상 */
+  .youtube1 > iframe {
+    position:absolute;
+    width:35%;
+    height:35%;
+  }
+  /* Monthly Insight end */
+  /* ETF 소개*/
+  .etf_info {
+    background-color: #f1f2f3;
+    text-align:center;
+    width:100%;
+    height:auto; margin-bottom:20px;
+  }
+
+  
+  
+    /* 이미지 슬라이드 */
+  .slider {
+    width:100%;
+    height:auto;
+    background-color: #f1f2f3;
+  }
+  .slider figure {position:relative;}
+  .slider figcaption {
+    position:absolute; bottom:0; left:0; width:100%; padding:20px;
+    box-sizing:border-box;
+    background-color:rgba(0,0,0,0.5);
+    font-size:18px;
+  }
+  .slider figcaption em {
+    display:block; font-weight:bold; font-size:28px;
+    text-transform:uppercase;
+    color:white;
+  }
+  .slider figcaption span {
+    display:block;
+    overflow:hidden; text-overflow:ellipsis; white-space:no;
+    color:white;
+  }
+      /* 아래 버튼 */
+  .slider .slick-dots {display:block; width:100%; text-align:center;}
+  .slider .slick-dots li {display:inline-block; width:15px; height:15px; margin:5px;}
+  .slider .slick-dots li button {
+    font-size:0; line-height:0;
+    display:block; width:15px; height:15px;
+    cursor:pointer;
+    background:#005666;
+    border-radius:50%;
+    border:0;
+  }
+  .slider .slick-dots li.slick-active button {background:#00887A;}
+    /* 화살표 위치 */
+  .slider .slick-prev {
+    position:absolute; left:0; bottom:0; z-index:1000;
+    width:30px; height:30px;
+    display:inline-block;
+    text-indent:-9999px;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+    /* 화살표 넣기 */
+  .slider .slick-prev::before {
+    content:"\f053";
+    color:#005666;
+    text-indent:0;
+    position:absolute; left:9px; top:8px;
+  }
+  .slider .slick-next {position:absolute; right:0; bottom:0; z-index:1000;
+    width:30px; height:30px;
+    display:inline-block;
+    text-indent:-9999px;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+  .slider .slick-next::before {
+    content:"\f054";
+    color:#005666;
+    text-indent:0;
+    position:absolute; left:11px; top:8px;
+  }
+
+   /* ETF 소개2_탭 버전 */
+   .tabs {
+     width:100%; height:600px auto; padding-top:30px;
+   }
+   input[type="radio"] {display:none;}
+   input[type="radio"] + label {display:inline-block;padding:20px;background:#ccc;color:#999;font-size:14px;cursor:pointer;width:15%;}
+   input[type="radio"]:checked + label {background:#006666;color:white;font-size:20px;font-weight: bold;border-color:#005666;border-width:5px;}
+
+   .conbox {width:80%;height:600px;background:#006666;margin:0 auto;display:none}
+   input[id="tab01"]:checked ~.con1 {display:block;}
+   input[id="tab02"]:checked ~.con2 {display:block;}
+   input[id="tab03"]:checked ~.con3 {display:block;}
+   input[id="tab04"]:checked ~.con4 {display:block;}
+
+  /* ETF 소개 end */
+  /* Contact */
+  .footer{
+    display: flex;
+    background: #1f1f1f;
+    padding:30px;
+    width:100%;
+    height:300px auto;
+  }
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer > div:last-child {
+    flex:9;
+    color: #fff;
+  }
+  /* Contact end */
+  /* 유튜브 & 블로그 링크 */
+  .icons_link {
+    width:100%;
+    height:auto;
+    background: #1f1f1f;
+  }
+  .icons_link > img {
+    width:30px;
+    height:30px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    /* Intro */
+        /* Nav container */
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 8px 24px;
+        }
+      
+            /* Menu */
+        .navbar_menu {
+          display: none;
+          flex-direction: column;
+          text-align: center;
+          width: 100%;
+        }
+      
+        .navbar_menu > a {
+          /* Fill in an entire line so that user can click on any space */
+          display: block;
+        }
+      
+            /* Icons */
+        .navbar_icons {
+          display: none;
+          justify-content: center;
+          width: 100%;
+        }
+      
+            /* Toggle button */
+        .navbar_toggleBtn {
+          display: block;
+        }
+      
+            /* When toggle button is clicked - active state */
+        .navbar_menu.active,
+        .navbar_icons.active {
+          display: flex;
+        }
+        
+        .about_epi {
+          width:100%;
+          height:1500px;
+          margin-top:-132px;
+          background:#f1f2f3;
+      }
+      .about_epi >.icons {
+          flex-direction:column;
+          align-items:center;
+      }
+      .partners {
+        width:95%;
+        height:120px;
+    }
+      .partners > li {
+        height:120px;
+    }
+      .icons {
+          width:100%; height:auto;
+      }
+     /* 유튜브 동영상 아래로 내리기 */
+     .insight {
+      width: 100%;
+      height:auto;
+      display:block;
+      margin-top:50px; margin-bottom:20px;
+    }
+    .youtube1 {position:relative; padding-bottom:56.25%; padding-top:50px; height:0; overflow:hidden;}
+    .youtube1 iframe,
+    .youtube1 object,
+    .youtube1 embed {
+      position:absolute; top:10%; left:20%; width:60%; height:60%;
+    }
+    /* 모바일 오류 해결 */
+    .btn {
+      transition:none;
+    }
+    .btn:active {
+      transform:none;
+    }
+    .more {
+      transition:none;
+    }
+    .more:active {
+      transform:none;
+    }
+    .icons_link > img {
+      width:30px;
+      height:30px;
+    }
+    .tabs > div {
+      width:90%;
+    }
+  }
+
+  /* For small screen */
+@media screen and (max-width: 780px) {
+    /* Intro */
+        /* Nav container */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
+    }
+  
+        /* Menu */
+    .navbar_menu {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .navbar_menu > a {
+      /* Fill in an entire line so that user can click on any space */
+      display: block;
+    }
+  
+        /* Icons */
+    .navbar_icons {
+      display: none;
+      justify-content: center;
+      width: 100%;
+    }
+  
+        /* Toggle button */
+    .navbar_toggleBtn {
+      display: block;
+    }
+  
+        /* When toggle button is clicked - active state */
+    .navbar_menu.active,
+    .navbar_icons.active {
+      display: flex;
+    }
+    .about_epi {
+        width:100%;
+        height:1500px;
+        margin-top:-132px;
+        background:#f1f2f3;
+    }
+    .about_epi >.icons {
+        flex-direction:column;
+        align-items:center;
+    }
+    .partners {
+      width:95%;
+      height:110px;
+  }
+    .partners > li {
+      height:110px;
+  }
+    .icons {
+        width:100%; height:auto;
+    }
+    /* DOWNLOAD 버튼 */
+    .btn {
+      text-decoration:none;
+      font-size:18px;
+      background-color:#005666;
+      color:white;
+      padding:10px 20px 10px 20px;
+      display:inline-block;
+      border-radius:10px;
+      border-bottom:5px solid #024d5a81;
+      text-shadow:0px -2px black;
+      margin-bottom:20px;
+      margin-top:20px;
+    }
+      /* 유튜브 동영상 아래로 내리기 */
+    .insight {
+      width: 100%;
+      height:auto;
+      display:block;
+      margin-top:40px; margin-bottom:20px;
+    }
+    .youtube1 {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
+    .youtube1 iframe,
+    .youtube1 object,
+    .youtube1 embed {
+      position:absolute; top:10%; left:10%; width:80%; height:80%;
+    }
+    /* 이미지 슬라이드 아래 버튼 관련 */
+    .slider figcaption {padding:10px;}
+    .slider figcaption em {font-size:18px;}
+    .slider figcaption span {font-size:10px;}
+    /* 모바일 오류 해결 */
+    .btn {
+      transition:none;
+    }
+    .btn:active {
+      transform:none;
+    }
+    .more {
+      transition:none;
+    }
+    .more:active {
+      transform:none;
+    }
+    .icons_link > img {
+      width:1.5%;
+      height:1.5%;
+    }
+    .tabs > div {
+      width:100%;
+    }
+}
